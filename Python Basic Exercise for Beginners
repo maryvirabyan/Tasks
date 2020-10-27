@@ -42,7 +42,7 @@ intgr=int(input("Enter an integer: "))
 func4(strng, intgr)
 
 """Question 5: Given a list of numbers, return True if first and last number of a list is same."""
-def func4(lst): 
+def func5(lst): 
   if lst[0]==lst[-1]: 
     print("result is True")
   else:
