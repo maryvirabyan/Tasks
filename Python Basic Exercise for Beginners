@@ -61,3 +61,13 @@ list1=[10, 20, 33, 46, 55]
 print("Given the list: ", list1 )
 print("Divisible of 5 in a list")
 func6(list1)
+
+"""Question 7: Return the total count of sub-string “Emma” appears in the given string."""
+def func7(strg, a): 
+  s=0
+  lst=strg.split()
+  for i in lst:    
+    if i==a:
+      s+=1  
+  print(a, "appeared ", s, " times" )
+func7("Emma is good developer. Emma is a writer","Emma")
