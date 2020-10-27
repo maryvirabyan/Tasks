@@ -9,3 +9,26 @@ def func( number1, number2):
 number1=int(input("Pls input some number: "))
 number2=int(input("Pls input some number: "))
 func(number1, number2)
+
+"""Question 2: Given a range of first 10 numbers, Iterate from start number to the end number and print the sum of the current number and previous number"""
+def func1(num):
+  prev=0
+  for i in range(num):
+    sum1=prev+i
+    print("Current Number ", i, "Previous Number: ",  prev,  "Sum: ",sum1)
+    prev=i
+func1(10)
+
+"""Question 3: Given a string, display only those characters which are present at an even index number."""
+string=input("Enter a word: ")
+string2=string[0::2]
+for i in string2:
+  print(i)
+  
+  """Question 3: Given a string, display only those characters which are present at an even index number."""
+string=input("Enter a word: ")
+print("Orginal String is ", string)
+string2=string[0::2]
+print("Printing only even index chars")
+for i in string2:
+  print(i)
