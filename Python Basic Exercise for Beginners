@@ -2,10 +2,10 @@
 def func( number1, number2):
   if (number1*number2)>1000:
     result=number1+number2
-    print(result)
+    print("The result is", result)
   else:
     result=number1*number2
-    print(result)
+    print("The result is", result)
 number1=int(input("Pls input some number: "))
 number2=int(input("Pls input some number: "))
 func(number1, number2)
