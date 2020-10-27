@@ -40,3 +40,14 @@ def func4(strng, intgr):
 strng=input("Enter a word: ")
 intgr=int(input("Enter an integer: "))
 func4(strng, intgr)
+
+"""Question 5: Given a list of numbers, return True if first and last number of a list is same."""
+def func4(lst): 
+  if lst[0]==lst[-1]: 
+    print("result is True")
+  else:
+    print("result is False")
+list1=[10, 20, 30, 40, 10]
+list2=[10, 20, 30, 40, 50]
+func4(list1)
+func4(list2)
