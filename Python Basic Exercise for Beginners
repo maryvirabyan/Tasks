@@ -32,3 +32,11 @@ string2=string[0::2]
 print("Printing only even index chars")
 for i in string2:
   print(i)
+
+"""Question 4: Given a string and an integer number n, remove characters from a string starting from zero up to n and return a new string."""
+def func4(strng, intgr): 
+  nstrng=strng[intgr::]
+  print(nstrng)
+strng=input("Enter a word: ")
+intgr=int(input("Enter an integer: "))
+func4(strng, intgr)
