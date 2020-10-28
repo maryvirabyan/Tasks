@@ -110,3 +110,13 @@ while (integer > 0):
     a = integer % 10
     integer = integer // 10
     print(a, end=" ")
+
+"""Question 12: Calculate income tax for the given income by adhering to the below rules"""
+income=int(input("Pls input your income: "))
+if income<=10000:
+  tax=0
+elif income<=20000:
+  tax=(income-10000)/10
+else:
+  tax=10000*10/100 + (income-20000)*20/100
+print("Total tax you have to pay is", tax)
