@@ -103,3 +103,10 @@ def filter(list1, list2):
       nlist.append(j)
   print(nlist)
 filter([10, 20, 23, 11, 17],[13, 43, 24, 36, 12])
+
+"""Question 11: Write a code to extract each digit from an integer, in the reverse order"""
+integer=int(input("Pls input some integer: "))
+while (integer > 0):
+    a = integer % 10
+    integer = integer // 10
+    print(a, end=" ")
