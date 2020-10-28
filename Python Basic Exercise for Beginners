@@ -71,3 +71,17 @@ def func7(strg, a):
       s+=1  
   print(a, "appeared ", s, " times" )
 func7("Emma is good developer. Emma is a writer","Emma")
+
+"""Question 9: Reverse a given number and return true if it is the same as the original number"""
+def palindrome(n):
+  a=0
+  k=n
+  while n/10!=0:
+    a=10*a+ n%10
+    n=n//10
+  if a==k:
+    print("The original and reverse number is the same")
+  else:
+    print("The original and reverse number is not the same")
+num=int(input("The original number: "))
+palindrome(num)
