@@ -76,3 +76,9 @@ num=int(input("Enter a number to find the factorial: "))
 for i in range(1,num+1):
   f*=i
 print(f)  
+"""Exercise Question 14: Reverse a given integer number"""
+num14=input("pls enter a number: ")
+a=0
+for i in range(len(num14),0,-1):
+  a=a*10+i
+print(a)
