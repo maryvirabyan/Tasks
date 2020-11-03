@@ -70,4 +70,9 @@ while count<10:
   a=b
   b=pivot
   count+=1
-  
+"""Exercise Question 13: Write a loop to find the factorial of any number"""
+f=1
+num=int(input("Enter a number to find the factorial: "))
+for i in range(1,num+1):
+  f*=i
+print(f)  
