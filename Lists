@@ -1,0 +1,56 @@
+"""Exercise Question 1: Given a Python list you should be able to display Python list in the following order"""
+list1 = [100, 200, 300, 400, 500]
+list2 = list1[5::-1]
+print(list2)
+"""Exercise Question 2: Concatenate two lists index-wise"""
+list21 = ["M", "na", "i", "Ke"] 
+list22 = ["y", "me", "s", "lly"]
+list23 = [i+j for i,j in zip(list21,list22)]
+print(list23)
+"""Exercise Question 3: Given a Python list. Turn every item of a list into its square"""
+list3 = [1, 2, 3, 4, 5, 6, 7]
+alist3 = []
+for i in list3:
+  alist3.append(i*i)
+print(alist3)
+"""Exercise Question 4: Concatenate two lists in the following order"""
+list41 = ["Hello ", "take "]
+list42 = ["Dear", "Sir"]
+list43 = []
+for i in list41:
+  for j in list42:
+    list43.append(i+j)
+print(list43)
+"""Exercise Question 5: Given a two Python list. Iterate both lists simultaneously such that list1 should display item in original order and list2 in reverse order"""
+list51 = [10, 20, 30, 40]
+list52 = [100, 200, 300, 400]
+for i in list51:
+  for j in list52[-1::]:
+    print(str(i),str(j))
+"""Exercise Question 6: Remove empty strings from the list of strings"""
+list61 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+for i in list61:
+  if i=="":
+    list61.remove(i)
+print(list61)
+"""Exercise Question 7: Add item 7000 after 6000 in the following Python List"""
+list71 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+list71[2][2].append(7000)
+print(list71)
+"""Exercise Question 8: Given a nested list extend it with adding sub list ["h", "i", "j"] in a such a way that it will look like the following list"""
+list81 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+SubList81 = ["h", "i", "j"]
+list81[2][1][2].extend(SubList81)
+print(list81)
+"""Exercise Question 9: Given a Python list, find value 20 in the list, and if it is present, replace it with 200. Only update the first occurrence of a value"""
+list91 = [5, 10, 15, 20, 25, 50, 20]
+for i in list91:
+  if i==20:
+    list91[list91.index(i)]=200
+print(list91)
+"""Exercise Question 10: Given a Python list, remove all occurrence of 20 from the list"""
+list10 = [5, 20, 15, 20, 25, 50, 20]
+for i in list10:
+  if i==20:
+    list10.remove(i)
+print(list10)
