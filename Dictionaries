@@ -21,6 +21,11 @@ sampleDict = {
    }
 }
 print(sampleDict['class']['student']['marks']['history'])
+"""Exercise 4: Initialize dictionary with default values"""
+employees = ['Kelly', 'Emma', 'John']
+defaults = {"designation": 'Application Developer', "salary": 8000}
+dict4 = dict.fromkeys(employees, defaults)
+print(dict4)
 """Exercise 5: Create a new dictionary by extracting the following keys from a given dictionary"""
 sampleDict = {
   "name": "Kelly",
