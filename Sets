@@ -1,0 +1,44 @@
+"""Exercise Question 1: Add a list of elements to a given set"""
+sampleSet1 = {"Yellow", "Orange", "Black"}
+sampleList1 = ["Blue", "Green", "Red"]
+sampleSet1.update(sampleList1)
+print(sampleSet1)
+"""Exercise Question 2: Return a set of identical items from a given two Python set"""
+set21 = {10, 20, 30, 40, 50}
+set22 = {30, 40, 50, 60, 70}
+print(set21.intersection(set22))
+"""Exercise Question 3: Returns a new set with all items from both sets by removing duplicates"""
+set31 = {10, 20, 30, 40, 50}
+set32 = {30, 40, 50, 60, 70}
+print(set31.union(set32))
+"""Exercise Question 4: Given two Python sets, update first set with items that exist only in the first set and not in the second set."""
+set41 = {10, 20, 30}
+set42 = {20, 40, 50}
+set41.difference_update(set42)
+print(set41)
+"""Exercise Question 5: Remove 10, 20, 30 elements from a following set at once"""
+set51 = {10, 20, 30, 40, 50}
+set51.difference_update({10, 20, 30})
+print(set51)
+"""Exercise Question 6: Return a set of all elements in either A or B, but not both"""
+set61 = {10, 20, 30, 40, 50}
+set62 = {30, 40, 50, 60, 70}
+print(set61.symmetric_difference(set62))
+"""Exercise Question 7: Determines whether or not the following two sets have any elements in common. If yes display the common elements"""
+set71 = {10, 20, 30, 40, 50}
+set72 = {60, 70, 80, 90, 10}
+if set71.isdisjoint(set72):
+  print("Two sets don't have any items in common")
+else:
+  print("Two sets have items in common")
+  print(set71.intersection(set72))
+  """Exercise Question 8: Update set1 by adding items from set2, except common items"""
+set81 = {10, 20, 30, 40, 50}
+set82 = {30, 40, 50, 60, 70}
+set81.symmetric_difference_update(set82)
+print(set81)
+"""Exercise Question 9: Remove items from set1 that are not common to both set1 and set2"""
+set91 = {10, 20, 30, 40, 50}
+set92 = {30, 40, 50, 60, 70}
+set91.intersection_update(set92)
+print(set91)
